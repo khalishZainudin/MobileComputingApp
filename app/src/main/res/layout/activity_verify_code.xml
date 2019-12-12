@@ -7,6 +7,36 @@
     android:background="@drawable/verify_code"
     tools:context=".VerifyCodeActivity">
 
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/IMGhome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/home"
+            android:onClick="backHome"
+            tools:layout_editor_absoluteX="180dp"
+            tools:layout_editor_absoluteY="289dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="@android:color/black"
+            android:textSize="10sp" />
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -22,6 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/BTNPlaceOrder"
         android:layout_width="392dp"
         android:layout_height="69dp"
         android:layout_gravity="end"
